@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>Kobe Bryant 傳奇網站</title>
+
+  <style>
+    body {
+      margin: 0;
+      /* 背景設定：更換為 kobe.jpg */
+      background-image: url("kobe.jpg");
+      background-attachment: fixed; /* 視差滾動效果 */
+      background-size: cover;      /* 圖片覆蓋全螢幕 */
+      background-position: center;  /* 圖片置中 */
+      background-color: #000;       /* 預備背景色 */
+      
+      font-family: "標楷體", serif;
+      line-height: 1.8;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      /* 標題區塊背景，增加層次感 */
+      background: rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: purple;
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: blue;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 40px;
+      /* 優化：加入半透明背景，確保文字可讀性 */
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px; /* 圓角 */
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* 陰影提升質感 */
+      
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-title {
+      font-size: 28px;
+      color: purple;
+      margin-bottom: 20px;
+      border-bottom: 2px solid purple;
+      display: inline-block;
+    }
+
+    p {
+      font-family: "新細明體";
+      font-size: 18px;
+      color: black;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    a {
+      color: darkred;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: purple;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .honors p {
+      margin: 10px 0;
+      border-left: 4px solid purple;
+      padding-left: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 16px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+    }
+
+    footer a {
+      color: #ffcc00;
+    }
+
+    /* 取代 marquee */
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      animation: scroll 12s linear infinite;
+      color: #ffcc00;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    @keyframes scroll {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+
+    iframe {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      border: 5px solid #333;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Kobe Bryant 傳奇網站</h1>
+  <p class="subtitle">
+    這是一個練習初級 HTML5 的網站<br>
+    同時也是我對 Kobe Bryant 表達緬懷和致敬的方式
+  </p>
+</header>
+
+<section>
+  <img src="kobe照片.jpg" alt="Kobe Bryant">
+  <p>
+    前言：Kobe 是我從小的偶像。既然是世界知名球星，他的球技肯定沒話說，
+    但我想比起其他球星，他更吸引人的，是那永不服輸、永不放棄的拚戰精神。
+  </p>
+</section>
+
+<section>
+  <h2 class="section-title">Kobe 個人生平</h2>
+
+  <a href="https://www.youtube.com/watch?v=F5IOsDZ8CQM" target="_blank">
+    <img src="kobe高中.jpg" alt="Kobe 高中時期">
+  </a>
+
+  <p style="color:red; font-weight:bold;" class="center">
+    （點擊上方 Kobe 高中照片觀看高中精華）
+  </p>
+
+  <p>
+    柯比·比恩·布萊恩（Kobe Bean Bryant，1978–2020），
+    前美國職業籃球運動員，主打得分後衛，1996 年直接從高中進入 NBA，
+    並效力洛杉磯湖人 20 年，被公認為史上最偉大球員之一。
+  </p>
+
+  <p>
+    2009 與 2010 年，Kobe 帶領湖人完成二連霸，並兩度獲得總決賽 MVP。
+    2018 年，他以動畫短片《親愛的籃球》榮獲奧斯卡。
+  </p>
+
+  <p>
+    2020 年 1 月 26 日，Kobe 於直升機事故中不幸辭世，享年 41 歲。
+    他的精神與影響力，至今仍深深影響著無數球迷。
+  </p>
+</section>
+
+<section class="honors">
+  <h2 class="section-title">Kobe 生涯榮譽</h2>
+
+  <p>5 次 NBA 總冠軍</p>
+  <p>18 次 NBA 全明星</p>
+  <p>2 次 NBA 總決賽 MVP</p>
+  <p>1 次 NBA 例行賽 MVP（2008）</p>
+  <p>單場 81 分（歷史第二高）</p>
+  <p>奈史密斯籃球名人堂（2020）</p>
+
+  <p class="center" style="margin-top: 25px;">
+    👉
+    <a href="https://www.youtube.com/watch?v=pKTLxG0wGfg" target="_blank">
+      觀看生涯精華影片
+    </a>
+  </p>
+</section>
+
+<section>
+  <h2 class="section-title">Kobe 球技分析</h2>
+
+  <img src="kobe jordan.jpg" alt="Kobe 與 Jordan">
+
+  <p>
+    Kobe 的球風與 Michael Jordan 相當接近，
+    以強烈進攻慾望與頂級中距離著稱。
+    其低位腳步、後仰跳投，至今仍難以被完全複製。
+  </p>
+
+  <p>
+    隨著時代改變，低位技巧逐漸式微，
+    但 Kobe 留下的美學與精神，將永遠存在於籃球歷史中。
+  </p>
+</section>
+
+<section>
+  <h2 class="section-title">低位腳步影片欣賞</h2>
+
+  <p>
+    以下影片展示 Kobe 招牌的拉開空間低位單打進攻技巧，
+    是後人難以複製的藝術。
+  </p>
+
+  <iframe
+    width="800"
+    height="450"
+    src="https://www.youtube.com/embed/Pk8fkNaTNvQ?start=294"
+    title="Kobe Bryant Post Moves"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</section>
+
+<footer>
+  <p>
+    <a href="https://zh.wikipedia.org/wiki/%E7%A7%91%E6%AF%94%C2%B7%E5%B8%83%E8%8E%B1%E6%81%A9%E7%89%B9" target="_blank">
+      資料來源：Wikipedia
+    </a>
+  </p>
+
+  <div class="marquee">Mamba Mentality: Forever Kobe Bryant. 只是練習作品，敬請指教。</div>
+</footer>
+
+<script>
+  const sections = document.querySelectorAll("section");
+
+  const reveal = () => {
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        sec.classList.add("show");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", reveal);
+  reveal(); // 初始化檢查一次
+</script>
+
+</body>
+</html>
