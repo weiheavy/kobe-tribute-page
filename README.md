@@ -1,14 +1,14 @@
 Kobe Bryant Tribute Page | 傳奇致敬網頁
 
 專案簡介
-這是一個使用 HTML5, CSS3 與 原生 JavaScript (Vanilla JS) 開發的單頁式響應式網頁。本專案不僅是我練習前端開發基礎的成果，更是為了向傳奇球星 Kobe Bryant 表達緬懷與敬意。
+這是一個使用 HTML5, CSS3 與  JavaScript 開發的單頁響應式網頁。本專案不僅是我練習前端開發基礎的成果，更是為了向傳奇球星 Kobe Bryant 表達緬懷與敬意。
 
 技術核心
-視覺設計：使用 CSS3 實作 視差滾動 (Parallax Scrolling) 效果，並搭配半透明磨砂玻璃質感 (Glassmorphism) 的內容區塊，解決背景圖對文字閱讀的干擾。
+視覺設計：使用 CSS3 實作 視差滾動 (Parallax Scrolling) 效果，並搭配半透明質感的內容區塊，解決背景圖對文字閱讀的干擾。
 
-動態互動：撰寫原生 JavaScript 監聽捲軸事件 (Scroll Event)，實作 Scroll Reveal 動畫，讓內容區塊在滑入視野時優雅漸顯。
+動態互動： JavaScript 監聽捲軸事件，實作 Scroll Reveal 動畫，讓內容區塊在滑入視野時優雅漸顯。
 
-標準化優化：利用 CSS @keyframes 動畫取代已過時的 <marquee> 標籤，確保網頁符合當前 Web 規格。
+標準化優化：利用 CSS @keyframes 動畫取代過時的 <marquee> 標籤，確保網頁符合當前 Web 規格。
 
 多媒體整合：嵌入 YouTube Iframe API，並透過參數設定精確的播放起始點。
 
